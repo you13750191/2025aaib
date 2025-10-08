@@ -1,17 +1,14 @@
-///week05-1.cpp
-///°}¦C
-#include<stdio.h>
-int main()
-{
-    int a[4]={10, 20, 30, 40};
-    for(int i=0;i<4;i++){
-        printf("%d ",a[i]);
-    }
-    printf("\n");
+class Solution {
+public:
+    int lengthOfLastWord(string s) {
+        stringstream ss(s);
+        string word;
+        //ss >> word;
+        //ss >> word;
+        while(ss >> word){
 
-    a[0]=99;
-    for(int i=0;i<4;i++){
-        printf("%d ",a[i]);
+        }
+        cout << word;
+        return word.length();
     }
-    printf("\n");
-}
+};

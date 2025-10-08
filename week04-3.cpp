@@ -1,12 +1,17 @@
-//weeek04-3.cpp
-//SOIT_Bsse_018
-#include<stdio.h>
+#include <iostream>
+#include <vector>
+using namespace std;
 int main()
 {
-	int N;
-	scanf("%d",&N);
-
-	for (int i=2;i<=N;i+=2){
-		printf("%d ",i);
+	vector<int>a;
+	for(int i=0;i<10;i++){
+		int now;
+		cin>>now;
+		if(now==0) break;
+		a.push_back(now);
 	}
+	for(int i=a.size()-1;i>=0;i--){
+		cout<<a[i]<<" ";
+	}
+	cout<<"\n";
 }
