@@ -1,17 +1,16 @@
-//week05-1.cpp
-//°}¦C
-#include<stdio.h>
+#include <iostream>
+#include <string>
+#include <sstream>
+using namespace std;
 int main()
 {
-    int a[4]={10, 20, 30, 40};
-    for(int i=0;i<4;i++){
-        printf("%d ",a[i]);
-    }
-    printf("\n");
+    string line;
+    getline(cin,line);
+    cout << line;
 
-    a[0]=99;
-    for(int i=0;i<4;i++){
-        printf("%d ",a[i]);
+    stringstream ss(line);
+    string word;
+    while(ss >> word){
+        cout <<"Åª¨ì¤@­Ó¦r:" << word << endl;
     }
-    printf("\n");
 }

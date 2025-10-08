@@ -1,14 +1,11 @@
-//week05-2.cpp
-//SOIT108_Base_007
-#include<stdio.h>
-
+#include <iostream>
+#include<sstream>
+#include<string>
+using namespace std;
 int main()
 {
-	int a[10];
-	for(int i=0;i<10;i++){
-		scanf("%d",&a[i]);
-	}
-	for (int i=9;i>=0;i--){
-		printf("%d ",a[i]);
-	}
+    string line;
+    while (getline(cin,line)){
+        cout << line << endl;
+    }
 }
